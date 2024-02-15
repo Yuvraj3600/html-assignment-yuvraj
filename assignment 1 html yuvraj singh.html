@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Order Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>Pizza Order Form</h1>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <section>
+        <h2>Number of Pizzas</h2>
+        <input type="number" name="quantity" id="quantity" min="1" required>
+      </section>
+
+      <section>
+        <h2>Size</h2>
+        <select name="size" id="size" required>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </section>
+
+      <section>
+        <h2>Shape</h2>
+        <input type="radio" name="shape" id="round" value="round" checked>
+        <label for="round">Round</label>
+        <input type="radio" name="shape" id="square" value="square">
+        <label for="square">Square</label>
+      </section>
+
+      <section>
+        <h2>Toppings</h2>
+        <input type="checkbox" name="topping" id="pepperoni" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+        <input type="checkbox" name="topping" id="sausage" value="sausage">
+        <label for="sausage">Sausage</label>
+        <input type="checkbox" name="topping" id="mushrooms" value="mushrooms">
+        <label for="mushrooms">Mushrooms</label>
+        <!-- Add more toppings as needed -->
+      </section>
+
+      <section>
+        <h2>Crust Type</h2>
+        <select name="crust" id="crust" required>
+          <option value="deep-dish">Deep Dish</option>
+          <option value="thin-crust">Thin Crust</option>
+          <option value="regular">Regular</option>
+          <!-- Add more crust types as needed -->
+        </select>
+      </section>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Pizza Shop</p>
+  </footer>
+
+</body>
+</html>
